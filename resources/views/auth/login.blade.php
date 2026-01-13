@@ -10,14 +10,14 @@
         @csrf
 
         <div class="mb-4">
-            <label class="auth-label">Email Codex</label>
+            <label class="auth-label">Email</label>
             <input type="email" name="email" class="form-control auth-input rounded" 
                    value="{{ old('email') }}" required autofocus placeholder="Enter your email">
             <x-input-error :messages="$errors->get('email')" class="mt-1 text-danger small" />
         </div>
 
         <div class="mb-4">
-            <label class="auth-label">Secret Key</label>
+            <label class="auth-label">Password</label>
             <input type="password" name="password" class="form-control auth-input rounded" 
                    required autocomplete="current-password" placeholder="••••••••">
             <x-input-error :messages="$errors->get('password')" class="mt-1 text-danger small" />
@@ -37,12 +37,12 @@
 
         <div class="d-grid">
             <button type="submit" class="btn btn-neon-auth py-3 rounded">
-                Enter Realm
+                Enter 
             </button>
         </div>
 
         <div class="text-center mt-4">
-            <p class="text-secondary small mb-0">New to the realm?</p>
+            <p class="text-secondary small mb-0">New ?</p>
             <a href="{{ route('register') }}" class="text-info fw-bold small text-decoration-none" style="letter-spacing: 1px;">
                 CREATE ACCOUNT
             </a>

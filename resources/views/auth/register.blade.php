@@ -8,28 +8,28 @@
         @csrf
 
         <div class="mb-3">
-            <label class="auth-label">Hero Name</label>
+            <label class="auth-label">Name</label>
             <input type="text" name="name" class="form-control auth-input rounded" 
                    value="{{ old('name') }}" required autofocus placeholder="Your Display Name">
             <x-input-error :messages="$errors->get('name')" class="mt-1 text-danger small" />
         </div>
 
         <div class="mb-3">
-            <label class="auth-label">Email Codex</label>
+            <label class="auth-label">Email</label>
             <input type="email" name="email" class="form-control auth-input rounded" 
                    value="{{ old('email') }}" required placeholder="email@example.com">
             <x-input-error :messages="$errors->get('email')" class="mt-1 text-danger small" />
         </div>
 
         <div class="mb-3">
-            <label class="auth-label">Secret Key</label>
+            <label class="auth-label">Password</label>
             <input type="password" name="password" class="form-control auth-input rounded" 
                    required autocomplete="new-password" placeholder="••••••••">
             <x-input-error :messages="$errors->get('password')" class="mt-1 text-danger small" />
         </div>
 
         <div class="mb-4">
-            <label class="auth-label">Confirm Secret Key</label>
+            <label class="auth-label">Confirm Password</label>
             <input type="password" name="password_confirmation" class="form-control auth-input rounded" 
                    required placeholder="••••••••">
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-1 text-danger small" />
