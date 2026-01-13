@@ -46,11 +46,15 @@ Frozen Wiki adalah aplikasi web berbasis Laravel yang berfungsi sebagai ensiklop
    ```bash
    php artisan migrate --seed
    ```
-6. Setup storage:
+6. Jalankan Scraper:
+   ```bash
+   php artisan dota:scrape-fandom
+   ```
+7. Setup storage:
    ```bash
    php artisan storage:link
    ```
-7. Build frontend & jalankan aplikasi:
+8. Build frontend & jalankan aplikasi:
    ```bash
    npm run build
    php artisan serve
